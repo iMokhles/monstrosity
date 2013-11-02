@@ -133,7 +133,7 @@ int main(int argc, char* argv[])
     }
 
     /*! Send things */
-    libusb_control_transfer(handle, 0x21, 4, 0, 0, data, 64, 1000);
+    libusb_control_transfer(handle, 0x21, 4, 0, 0, 0, 0, 1000);
 
     usb_dfu_notify_finished(handle);
     usb_dfu_notify_finished(handle);
